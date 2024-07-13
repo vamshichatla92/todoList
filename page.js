@@ -80,7 +80,7 @@ function createAndAppendToDo(todo) {
     inputElement.onclick = function() {
         onToDostatusChange(checkBoxId, labelId, toDOId);
     }
-    toDoItem.appendChild(inputElement);
+    toDoItem.appendChild(inputElement);  
     /*container right to check box */
     let labelContainer = document.createElement("div");
     labelContainer.classList.add("label-container");
@@ -90,7 +90,7 @@ function createAndAppendToDo(todo) {
     labelElement.textContent = todo.text;
     labelElement.classList.add("label-text");
     labelElement.setAttribute("for", checkBoxId);
-    labelElement.id = labelId; /*assigning a unique Id for each label*/
+    labelElement.id = labelId; /*assigning a ubvbvnique Id for each label*/
     if (todo.isChecked === true) {
         labelElement.classList.add("checked");
     }
